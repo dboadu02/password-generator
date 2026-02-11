@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    background-color: #1C1C1C;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.container {
+    width: 450px;
+    height: 470px;
+    margin: 10px auto 0;
+    background-color: #1F2937;
+    color: white;
+    text-align: left;
+    padding: 80px 50px 0;
+}
+
+#heading {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+#desc {
+    font-weight: 400;
+    font-size: 20px;
+    color: #D5D4D8;
+    margin: 0 0 50px 0;
+   
+}
+
+
+#green {
+    color: #4ADF86;
+}
+
+#gen-passBtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+    height: 42px;
+    color: white;
+    background-color: #10B981;
+    border: none;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#passwords{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #2F3E53;
+    margin-top: 40px;  
+}
+
+.gen-password {
+    width: 210px;
+    height: 30px;
+    background-color: #273549;
+    margin-top: 40px;
+    text-align: center;
+    color: #55F991;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.gen-password:hover {
+    cursor: pointer;
+    background-color: #2e3c50;
+}
