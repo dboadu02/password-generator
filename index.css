@@ -45,11 +45,12 @@ body{
     width: 200px;
     height: 42px;
     color: white;
-    background-color: #10B981;
+    background-color: #09815f;
     border: none;
     border-radius: 7px;
     font-weight: 500;
     font-size: 16px;
+    margin-top: 10px;
 }
 
 #passwords{
@@ -75,4 +76,14 @@ body{
 .gen-password:hover {
     cursor: pointer;
     background-color: #2e3c50;
+}
+
+input{
+    width: 40px;
+}
+
+#inputLabel {
+    font-weight: 400;
+    font-size: 16px;
+    color: #D5D4D8;
 }

@@ -5,47 +5,57 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
     "$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?","/"
 ]
 
+//allow users to input length of password
+let characterLength = null
+let inputFieldEl = document.getElementById("inputField-el")
+inputFieldEl.addEventListener("input", (event) => {
+  characterLength = +event.target.value
+})
+
+//button to generate password
+document.getElementById("gen-passBtn").addEventListener("click", generatePassword);
 
 //copy to clipboard
 document.getElementById('password2-el').addEventListener("click", function(){
   navigator.clipboard.writeText(this.textContent);
 });
-
 document.getElementById("password1-el").addEventListener("click", function () {
   navigator.clipboard.writeText(this.textContent);
 });
 
-//button to generate password
-document.getElementById("gen-passBtn").addEventListener("click", generatePassword);
 
-const passwordOneEl = document.getElementById('password1-el')
-const passwordTwoEl = document.getElementById("password2-el")
+let passwordOneEl = document.getElementById('password1-el')
+let passwordTwoEl = document.getElementById("password2-el")
 
 function generatePassword() {
-    let password1 = [];
-    let password2 = []; 
-    let string = null
-    let string2 = null
-    
-    for(let i = 0; i < 15; i++){
-        let randomIndex1 = Math.floor(Math.random() * characters.length);
-        let randomIndex2 = Math.floor(Math.random() * characters.length);
+  let password1 = [];
+  let password2 = [];
+  let string = null;
+  let string2 = null;
 
-        let character1 = characters[randomIndex1];
-        let character2 = characters[randomIndex2];
+  /*   if(characterLength < 5 || characterLength > 15){
+    console.log("input valid character length")
+    return
+  } */
 
-        password1.push(character1)
-        password2.push(character2);
-    }
+  for (let i = 0; i < characterLength; i++) {
+    let randomIndex1 = Math.floor(Math.random() * characters.length);
+    let randomIndex2 = Math.floor(Math.random() * characters.length);
 
-    //merge characters into a string
-    string = password1.join('')
-    string2 = password2.join("");
+    let character1 = characters[randomIndex1];
+    let character2 = characters[randomIndex2];
 
-    //display on screen
-    passwordOneEl.textContent = string
-    passwordTwoEl.textContent = string2
-    
+    password1.push(character1);
+    password2.push(character2);
+  }
+
+  //merge characters into a string
+  string = password1.join("");
+  string2 = password2.join("");
+
+  //display on screen
+  passwordOneEl.textContent = string;
+  passwordTwoEl.textContent = string2;
 }
 
 

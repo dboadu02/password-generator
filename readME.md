@@ -3,8 +3,12 @@
 - Built with HTML,CSS & JS
 
 # Features
+- Allows users to set password length
 - Button that generates password when clicked
-- Click to copy password
+- Genrated Password is copied to clipboard when clicked.
+
+# To be worked on
+- Set password length to 5 - 15
 
 ## Getting Started
 
@@ -18,5 +22,5 @@ npm start
 ## Deployment
 
 - Deployed on netlify
-- livesite URL: ()
+- livesite URL: (https://generate-yourpassworrd.netlify.app/)
 
