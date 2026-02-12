@@ -3,7 +3,7 @@
 - Built with HTML,CSS & JS
 
 ## Features
-- Allows users to set password length
+- Allows users to set password length (maximum length: 15)
 - Button that generates password when clicked
 - Genrated Password is copied to clipboard when clicked.
 
