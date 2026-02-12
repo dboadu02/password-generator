@@ -2,12 +2,12 @@
 - This app allows you to randomly generate passwords
 - Built with HTML,CSS & JS
 
-# Features
+## Features
 - Allows users to set password length
 - Button that generates password when clicked
 - Genrated Password is copied to clipboard when clicked.
 
-# To be worked on
+## To be worked on
 - Set password length to 5 - 15
 
 ## Getting Started
