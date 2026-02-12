@@ -33,10 +33,10 @@ function generatePassword() {
   let string = null;
   let string2 = null;
 
-  /*   if(characterLength < 5 || characterLength > 15){
+  if(characterLength < 5 || characterLength > 15){
     console.log("input valid character length")
     return
-  } */
+  }
 
   for (let i = 0; i < characterLength; i++) {
     let randomIndex1 = Math.floor(Math.random() * characters.length);
