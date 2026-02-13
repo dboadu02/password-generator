@@ -8,9 +8,6 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
 //allow users to input length of password
 let characterLength = null
 let inputFieldEl = document.getElementById("inputField-el")
-inputFieldEl.addEventListener("input", (event) => {
-  characterLength = +event.target.value
-})
 
 //button to generate password
 document.getElementById("gen-passBtn").addEventListener("click", generatePassword);
@@ -32,6 +29,7 @@ function generatePassword() {
   let password2 = [];
   let string = null;
   let string2 = null;
+  characterLength = +inputFieldEl.value; //assign input as a number to character length
 
   if(characterLength < 5 || characterLength > 15){
     console.log("input valid character length")
@@ -56,6 +54,8 @@ function generatePassword() {
   //display on screen
   passwordOneEl.textContent = string;
   passwordTwoEl.textContent = string2;
+
+  inputFieldEl.value = ""  //clear input area
 }
 
 
